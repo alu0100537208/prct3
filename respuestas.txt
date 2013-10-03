@@ -99,3 +99,39 @@ Se utiliza para comillas dobles sintaxis
 irb(main):023:0> %w[this is a test]
 => ["this", "is", "a", "test"]
 
+
+31. ¿Qué es esto? %w[\t \n]
+ => ["\\t\\n"] 
+
+32. ¿Qué es esto? %W[\t \n]
+ => ["\t\n"] 
+ 
+33. ¿Qué́ contiene nils? nils = Array.new(3)
+ => [nil, nil, nil] 
+ 
+34. ¿Qué́ contiene zeros? zeros = Array.new(3, 0)
+ => [0, 0, 0] 
+ 
+35. ¿Qué queda en b? 
+ => [[1, 2], [3, 4]] 
+ 
+36. ¿Qué́ queda en c?
+ => [0, 2, 4]
+ 
+37. ¿Cual es el resultado de cada una de estas operaciones?
+
+a = (’a’..’e’).to_a
+["a", "b", "c", "d", "e"]
+a[1,1]
+ => ["b"] 
+a[-2,2]
+ => ["d", "e"] 
+a[0..2]
+ => ["a", "b", "c"] 
+a[0...1]
+ => ["a"] 
+a[-2..-1]
+ => ["d", "e"] 
+
+
+
