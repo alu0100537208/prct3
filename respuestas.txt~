@@ -1,0 +1,11 @@
+¿Qué diferencia hay entre "\t\n" y ’\t\n’?
+
+irb(main):001:0> "\t\n"
+=> "\t\n"
+irb(main):002:0> '\t\n'
+=> "\\t\\n"
+
+
+¿C´omo funciona %q? ¿Qué es %q{hello world\n}? ¿Qu´e es %q{’a’ ’b’ ’c’}?
+
+Se utiliza para la sintaxis strings.Las comillas simples es similar a % Q , pero las cadenas entre comillas simples no están sujetos a la sustitución expresión o secuencias de escape.

@@ -1,0 +1,32 @@
+21.-¿Qué diferencia hay entre "\t\n" y ’\t\n’?
+
+irb(main):001:0> "\t\n"
+=> "\t\n" (Se interpreta como un tabulador y un salto de linea)
+irb(main):002:0> '\t\n'
+=> "\\t\\n" (Interpreta la cadena tal y como se muestra)
+
+
+22.-¿Cómo funciona %q? ¿Qué es %q{hello world\n}? ¿Qu´e es %q{’a’ ’b’ ’c’}?
+
+Se utiliza para la sintaxis strings.Las comillas simples es similar a % Q , pero las cadenas entre comillas simples no están sujetos a la sustitución expresión o secuencias de escape.
+
+irb(main):007:0> %q{hello world\n}
+=> "hello world\\n"
+
+irb(main):006:0> %q{'a', 'b', 'c'}
+=> "'a', 'b', 'c'"
+
+23.-¿Cómo funciona %Q? ¿Qu´e es %Q{hello world\n}? ¿Qu´e es %Q{"a" "b" "c"}?
+
+Esta es una alternativa para las cadenas entre comillas dobles, cuando se tiene más caracteres de comillas en un string.Instead de poner las barras invertidas delante de ellos
+
+irb(main):008:0> %Q{hello world\n}
+=> "hello world\n"
+
+irb(main):009:0> %Q{"a" "b" "c"}
+=> "\"a\" \"b\" \"c\""
+
+24.-
+
+
+
